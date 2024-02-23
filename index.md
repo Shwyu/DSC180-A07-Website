@@ -1,10 +1,10 @@
 
 
 # Hierarchical Latent Variable Models for Neural Data Analysis
-Sha lei: s1lei@ucsd.edu, Yutian Shi: yus029@ucsd.edu, Courtney Cheung: c6cheung@ucsd.edu, Shuyu Wang: shw043@ucsd.edu<br>
+Sha lei: [s1lei@ucsd.edu], Yutian Shi: [yus029@ucsd.edu], Courtney Cheung: [c6cheung@ucsd.edu], Shuyu Wang: [shw043@ucsd.edu]<br>
 Mentor: Mikio Aoi maoi@ucsd.edu
         
-GitHub code: https://github.com/courtneyacheung/Hierarchical-Latent-Variable-Models-for-Neural-Data-Analysis
+GitHub code: [https://github.com/courtneyacheung/Hierarchical-Latent-Variable-Models-for-Neural-Data-Analysis]
 <br>
 
 ## Introduction 
