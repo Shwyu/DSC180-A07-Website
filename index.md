@@ -6,7 +6,6 @@ Mentor: Mikio Aoi [maoi@ucsd.edu](mailto:maoi@ucsd.edu)
         
 GitHub code: 
 <a href="https://github.com/courtneyacheung/Hierarchical-Latent-Variable-Models-for-Neural-Data-Analysis">Click Here </a>
-<br>
 
 ## Introduction 
 
