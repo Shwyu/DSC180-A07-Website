@@ -10,8 +10,6 @@ GitHub code:
 
 ## Introduction 
 
-### Literature
-
 ### Motivation
 
 ## Data
