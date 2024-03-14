@@ -11,7 +11,7 @@ GitHub code: https://github.com/courtneyacheung/Hierarchical-Latent-Variable-Mod
 
 
 ### Motivation
-mmmmmm
+aaaaaaa
 ## Data
 
 <br>
