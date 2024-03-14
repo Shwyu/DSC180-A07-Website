@@ -42,7 +42,9 @@ We want to build a model that makes use of the advantages of GPFA and EM algorit
 <br>
     
 ## Results
-    
+<p align="center">
+  <iframe src='./images/SCdg_train_trajectories_plot.html' width=938 height=565 frameBorder=0></iframe>
+</p>    
 
 <br>
 
