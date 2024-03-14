@@ -1,5 +1,6 @@
+url: https://shwyu.github.io/DSC180-A07-Website/
 remote_theme: pages-themes/cayman@v0.2.0
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
-exclude: [node_modules]
-
+exclude:
+- node_modules
