@@ -18,6 +18,7 @@ The work on neural spike sorting has evolved substantially, emerging after new t
 We want to build a model that makes use of the advantages of GPFA and EM algorithms – namely, that GPFA works well with temporal data and that the EM algorithm is efficient for factor analysis, where multiple maximums need to be identified. Because Gaussian distributions produce positive and negative draws, a more appropriate modification to GPFA will use a Poisson distribution to reflect the true non-negative support of the discontinuous spike data. We would also like apply pCCA to two distinct brain regions in order to explore whether there is a relationship between neural activity in those regions during decision making tasks.
 
 ## Data
+![ibl](./images/IBL dataset.jpg "Dataset")
 
 <br>
 
