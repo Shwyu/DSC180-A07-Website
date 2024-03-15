@@ -35,12 +35,31 @@ The International Brain Laboratory used neuropixel probes to record neural activ
 * Major behavioral events of interest for analysis include the stimulus onset time, the animal’s choice, the feedback delivery time, the feedback type (reward vs noise), the probability of the stimulus being on the left (block type), and the wheel motion onset time.
 * In this task, the time between stimulus onset and wheel motion onset, referred to as the reaction time of the animals, is short, with a median of 150ms.
 
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+
 <div class="row">
   <div class="column">
-    <img src="./images/experiment.jpg" alt="mice" style="width:50%">
+    <img src="./images/experiment.jpg" alt="mice" style="width:100%">
   </div>
   <div class="column">
-    <img src="./images/experiment_time.png" alt="time" style="width:50%">
+    <img src="./images/experiment_time.png" alt="time" style="width:100%">
 </div>
 <br>
 
