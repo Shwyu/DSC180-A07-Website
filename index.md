@@ -40,7 +40,7 @@ body {
 </style>
 <body>
 
-<span style='font-size:100px;" "text-align: center;"'>&#8595;</span>
+<span style='font-size:100px; text-align: center;' >&#8595;</span>
 
 </body>
 
