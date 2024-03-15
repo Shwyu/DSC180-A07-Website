@@ -74,7 +74,9 @@ Here, we learn the first layer of latent variables for each brain region. This m
 
 <body>
 
-<span style='font-size:100px' >&#8595;</span>
+<div style="text-align: center;">
+    <span style="font-size: 100px;">&#8595;</span>
+</div>
 
 </body>
 
