@@ -16,8 +16,17 @@ We want to build a model that makes use of the advantages of GPFA and EM algorit
 ## Hierarchical Latent Variable Model Pipeline
 
 ### Data
+
+IBL used neuropixel probes to record neural activity from various mice brain areas during a decision-making task.
+
 <div style="text-align: center;">
         <img src="./images/IBL dataset.jpg" style="width: 300px; height: 255px;" alt="Alt text">
+</div>
+<br>
+Mice use a wheel to move a visual stimulus to the center of the screen, with varying probabilities of stimulus presentation on the left or right side. 
+
+<div style="text-align: center;">
+        <img src="./images/experiment.jpg" style="width: 300px; height: 255px;" alt="Alt text">
 </div>
 <br>
 
