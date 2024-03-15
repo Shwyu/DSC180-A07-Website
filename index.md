@@ -48,25 +48,6 @@ The International Brain Laboratory used neuropixel probes to record neural activ
         <img src="./images/pipeline_eda.png" alt="Alt text">
 </div >
 
-<style>
-* {
-  box-sizing: border-box;
-}
-
-.column {
-  float: left;
-  width: 50%;
-  padding: 5px;
-}
-
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-</style>
-
 ### Variational Gaussian Process Factor Analysis (vLGP)
 Here, we learn the first layer of latent variables for each brain region. This model is a modifcation of Gaussian Process Factor Analysis (GPFA) using the Poisson Distribution as well as Variational Inference. 
 
@@ -107,5 +88,24 @@ Increase in the number of latent variables in pCCA model leads to smaller RMSE b
 *insert graph*
 
 For future research, we would like to explore the correlation between regions in more depth by reconstructing the data based on the learned latent variables produced by pCCA. Further research could also include investigating whether there is causation between neural activity in the Superior Colliculus Deep Gray Layer and Intermediate White Layer.
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
 
 
