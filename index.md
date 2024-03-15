@@ -26,7 +26,7 @@ We want to build a model that makes use of the advantages of GPFA and EM algorit
 <br>
 
 <div style="text-align: center;">
-        <img src="./images/Mice Brain Regions.jpg" style="height: 255px; overflow: hidden; alt="Alt text">
+        <img src="./images/mice_brain_selection.jpg" alt="Alt text">
 </div >
 
 *insert eda graphs*
