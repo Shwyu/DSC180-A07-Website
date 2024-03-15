@@ -61,33 +61,17 @@ Here, we learn the first layer of latent variables for each brain region. This m
 </body>
 
 ### Probabilistic Canonical Correlation Analysis
-
-
-
-
-### Gaussian Process Factor Analysis
-   
-### Variational Latent Gaussian Process
-
-### Canonical Correlation Analysis
-
-### Probailistic Canonical Correlation Analysis
-
+After fitting our data to the vLGP model, we would explore multi-region analysis to examine variability shared between regions. This will give us insight into how activity in brain regions may be correlated versus distinct during a given task. For this analysis, we use Probabilistic Canonical Correlation (pCCA). 
+<a href="https://gregorygundersen.com/blog/2018/09/10/pcca/">Learn about pCCA </a>
 <br>
 
-## Procedure
+## Conclusion
+From the two regions’ neural trajectories generated from the vLGP, there are clear separa- tions between wheels turning right and wheels turning left in the brain regions Superior Colliculus Deep Gray Layer and Intermediate White Layer, which means that there are different neural activity patterns under left and right direction conditions. However, we cannot make a conclusion about whether one region is driven by another when both are activated.
 
-<br>
-    
-## Results
-<p align="center">
-  <iframe src='./images/SCdg_train_trajectories_plot.html' width=938 height=565 frameBorder=0></iframe>
-</p>    
+Increase in the number of latent variables in pCCA model leads to smaller RMSE be- tween the actual latent variable and estimated latent variable from the two regions, which conforms to the rules that with more latent variables, the model captures the complexity of the latent variable better.
 
-<br>
+*insert graph*
 
-## Discussion
-
-<br><br><br>
+For future research, we would like to explore the correlation between regions in more depth by reconstructing the data based on the learned latent variables produced by pCCA. Further research could also include investigating whether there is causation between neural activity in the Superior Colliculus Deep Gray Layer and Intermediate White Layer.
 
 
