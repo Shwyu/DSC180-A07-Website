@@ -48,14 +48,14 @@ body {
 ### Variational Gaussian Process Factor Analysis (vLGP)
 Here, we learn the first layer of latent variables for each brain region. This model is a modifcation of Gaussian Process Factor Analysis (GPFA) using the Poisson Distribution as well as Variational Inference. 
 
-<a href="https://github.com/yuanz271/vlgpax">Learn About vLGP </a>
+<a href="[https://github.com/yuanz271/vlgpax](https://arxiv.org/pdf/1604.03053.pdf)">Learn about vLGP </a>
 <br>
-<a href="https://github.com/yuanz271/vlgpax">Learn About GPFA </a>
+<a href="https://github.com/yuanz271/vlgpax">Learn about GPFA </a>
 <br>
-<a href="https://github.com/yuanz271/vlgpax">Learn About Variational Inference </a>
+<a href="https://github.com/yuanz271/vlgpax">Learn about Variational Inference </a>
 <br>
 
-*insert vLGP results*
+
 
 <body>
 
