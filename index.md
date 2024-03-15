@@ -26,12 +26,12 @@ The International Brain Laboratory used neuropixel probes to record neural activ
         <img src="./images/IBL dataset.jpg" style="width: 300px; height: 255px;" alt="Alt text">
 </div>
 <br>
--The decision-making task requires the mouse to move the visual stimulus 35° to the center of the screen by using a wheel with its two front paws.
--The stimulus is presented on the left or right side of the screen with a probability that varies from one block of trials to the next.
--Zero-contrast stimuli are presented within these blocks, providing insight into the mouse's behavior prior to the likely side of the stimulus.
--Both behavioral and neural data are recorded simultaneously to study neural correlates of the behavior.
--Major behavioral events of interest for analysis include the stimulus onset time, the animal’s choice, the feedback delivery time, the feedback type (reward vs noise), the probability of the stimulus being on the left (block type), and the wheel motion onset time.
--In this task, the time between stimulus onset and wheel motion onset, referred to as the reaction time of the animals, is short, with a median of 150ms.
+*The decision-making task requires the mouse to move the visual stimulus 35° to the center of the screen by using a wheel with its two front paws.
+*The stimulus is presented on the left or right side of the screen with a probability that varies from one block of trials to the next.
+*Zero-contrast stimuli are presented within these blocks, providing insight into the mouse's behavior prior to the likely side of the stimulus.
+*Both behavioral and neural data are recorded simultaneously to study neural correlates of the behavior.
+*Major behavioral events of interest for analysis include the stimulus onset time, the animal’s choice, the feedback delivery time, the feedback type (reward vs noise), the probability of the stimulus being on the left (block type), and the wheel motion onset time.
+*In this task, the time between stimulus onset and wheel motion onset, referred to as the reaction time of the animals, is short, with a median of 150ms.
 
 <div style="text-align: center;">
         <img src="./images/experiment.jpg" style="width: 300px; height: 255px;" alt="Alt text">
