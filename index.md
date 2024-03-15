@@ -62,6 +62,7 @@ Here, we learn the first layer of latent variables for each brain region. This m
 
 ### Probabilistic Canonical Correlation Analysis
 After fitting our data to the vLGP model, we would explore multi-region analysis to examine variability shared between regions. This will give us insight into how activity in brain regions may be correlated versus distinct during a given task. For this analysis, we use Probabilistic Canonical Correlation (pCCA). 
+<br>
 <a href="https://gregorygundersen.com/blog/2018/09/10/pcca/">Learn about pCCA </a>
 <br>
 
