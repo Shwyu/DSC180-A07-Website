@@ -1,8 +1,12 @@
 
 
 # Hierarchical Latent Variable Models for Neural Data Analysis
-Sha lei: [s1lei@ucsd.edu](mailto:s1lei@ucsd.edu), <br>Yutian Shi: [yus029@ucsd.edu](mailto:yus029@ucsd.edu), <br>Courtney Cheung: [c6cheung@ucsd.edu](mailto:c6cheung@ucsd.edu), <br>Shuyu Wang: [shw043@ucsd.edu](mailto:shw043@ucsd.edu)<br>
-Mentor: Mikio Aoi [maoi@ucsd.edu](mailto:maoi@ucsd.edu)
+<br>
+<p align="center">Sha lei: [s1lei@ucsd.edu](mailto:s1lei@ucsd.edu)</p>
+<p align="center">Yutian Shi: [yus029@ucsd.edu](mailto:yus029@ucsd.edu)</p>
+<p align="center">Courtney Cheung: [c6cheung@ucsd.edu](mailto:c6cheung@ucsd.edu)</p>
+<p align="center">Shuyu Wang: [shw043@ucsd.edu](mailto:shw043@ucsd.edu)</p>
+<p align="center">Mentor: Mikio Aoi [maoi@ucsd.edu](mailto:maoi@ucsd.edu)</p>
         
 Full Report:
 <a href="https://github.com/courtneyacheung/Hierarchical-Latent-Variable-Models-for-Neural-Data-Analysis/blob/main/papers/DSC_Capstone_Q2_Report.pdf">Click Here </a>
@@ -47,18 +51,40 @@ The International Brain Laboratory used neuropixel probes to record neural activ
 <br>
 
 **Region Selection:**
+<br>
+<br>
+We pick the Midbrain region, Superior Colliculus, as the candidate regions, as it has the motor functions for controlling the eyes and brain’s orientation to the stimulus. We selected Superior Colliculus Deep Gray Layer (SCdg) and Superior Colliculus Intermediate White Layer (SCiw) as the two candidate regions, and we will explore whether they are activated simultaneously and the patterns of the neuron activities in these two regions under different task conditions by drawing Peristimulus time histogram (PSTH) and raster plot.
+<br>
 <div style="text-align: center;"><img src="./images/pipeline_eda.png" alt="Alt text"></div >
+<br>
+
+* Raster: a visual representation that shows the timing and occurrence of neural spikes over time. Each vertical line represents a spike and the horizontal line represents time. The Raster plot displays the firing patterns of neurons and is useful for analyzing the neural activities in the brain.
+* Peri-Stimulus Time Histogram (PSTH): illustrates the neural firing rate in response to a stimulus over time. It provides the temporal pattern and strength of neural response which helps to analyze how neurons react to specific stimuli.
+* Firing rate: the number of times that a neuron releases electrical energy in a given time period.
 
 
 ### Variational Gaussian Process Factor Analysis (vLGP)
-Here, we learn the first layer of latent variables for each brain region. This model is a modifcation of Gaussian Process Factor Analysis (GPFA) using the Poisson Distribution as well as Variational Inference. 
+Here, we learn the first layer of latent variables for each brain region. This model is a modifcation of Gaussian Process Factor Analysis (<a href="https://journals.physiology.org/doi/full/10.1152/jn.90941.2008?rfr_dat=cr_pub++0pubmed&url_ver=Z39.88-2003&rfr_id=ori%3Arid%3Acrossref.org">GPFA</a>) using the Poisson Distribution as well as Variational Inference. Variational inference is a method that approximates the complex true posterior p(x|y) with a simpler distribution q(x)). It is an essential foundation for us to construct our latent variable model.<a href="https://gregorygundersen.com/blog/2021/04/16/variational-inference/"> Learn about Variational Inference </a> 
+
+To measure the approximation of variational distribution q(x) to the true posterior, the Kullback-Leibler (KL) divergence was introduced. 
+
+$$D_{KL}(q || p) = \int_{-\infty}^\infty q(x) \log{\frac{q(x)}{p(x|y)}} dx$$ 
+
+When the KL divergence is equal to 0, q(x) is exactly the same as the true posterior. Thus, minimizing the KL divergence helps us to find the optimal q(x) that best approximates the actual distribution. 
+
+$$\log{p(y)} = L(q) + D_{KL}(q || p)$$
+
+Minimizing the KL divergence is the same as maximizing the evidence lower bound $L(q)$ (ELBO), a lower bound of the log marginal likelihood (2016). Thus, q(x) can be optimized by maximizing ELBO.
+
+<Figure>
+<div style="text-align: center;">
+        <img src="./images/vlgp_demo.png" style="width: 850px; height: 255px;" alt="Alt text">
+        <figcaption>Fig.1 - <a href="https://arxiv.org/pdf/1604.03053.pdf">vLGP </a> workflow</figcaption>
+</div>
+</Figure>
 
 <div>
-<a href="https://arxiv.org/pdf/1604.03053.pdf">Learn about vLGP </a>
 <br>
-<a href="https://journals.physiology.org/doi/full/10.1152/jn.90941.2008?rfr_dat=cr_pub++0pubmed&url_ver=Z39.88-2003&rfr_id=ori%3Arid%3Acrossref.org">Learn about GPFA </a>
-<br>
-<a href="https://gregorygundersen.com/blog/2021/04/16/variational-inference/">Learn about Variational Inference </a>
 </div>
 <br>
 
@@ -82,7 +108,8 @@ Here, we learn the first layer of latent variables for each brain region. This m
 </body>
 
 ### Probabilistic Canonical Correlation Analysis
-After fitting our data to the vLGP model, we would explore multi-region analysis to examine variability shared between regions. This will give us insight into how activity in brain regions may be correlated versus distinct during a given task. For this analysis, we use Probabilistic Canonical Correlation (pCCA). 
+After fitting our data to the vLGP model, we would explore multi-region analysis to examine variability shared between regions. This will give us insight into how activity in brain regions may be correlated versus distinct during a given task. For this analysis, we use Probabilistic Canonical Correlation (pCCA).<br>
+<div style="text-align: center;"><img src="./images/pcca_math.png" alt="Alt text"></div >
 <br>
 <a href="https://gregorygundersen.com/blog/2018/09/10/pcca/">Learn about pCCA </a>
 <br>
@@ -91,8 +118,12 @@ After fitting our data to the vLGP model, we would explore multi-region analysis
 From the two regions’ neural trajectories generated from the vLGP, there are clear separa- tions between wheels turning right and wheels turning left in the brain regions Superior Colliculus Deep Gray Layer and Intermediate White Layer, which means that there are different neural activity patterns under left and right direction conditions. However, we cannot make a conclusion about whether one region is driven by another when both are activated.
 
 Increase in the number of latent variables in pCCA model leads to smaller RMSE be- tween the actual latent variable and estimated latent variable from the two regions, which conforms to the rules that with more latent variables, the model captures the complexity of the latent variable better.
-
-*insert graph*
+<br>
+<figure>
+<div style="text-align: center;"><img src="./images/pCCA_RMSE_plot.png" alt="Alt text"></div >
+<figcaption>Fig.1 - PCCA RMSE</figcaption>
+</figure>
+<br>
 
 For future research, we would like to explore the correlation between regions in more depth by reconstructing the data based on the learned latent variables produced by pCCA. Further research could also include investigating whether there is causation between neural activity in the Superior Colliculus Deep Gray Layer and Intermediate White Layer.
 
