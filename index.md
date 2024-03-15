@@ -42,6 +42,7 @@ The International Brain Laboratory used neuropixel probes to record neural activ
   <div class="column">
     <img src="./images/experiment_time.png" alt="time" style="width:100%">
 </div>
+<br>
 
 <div style="text-align: center;">
         <img src="./images/pipeline_eda.jpg" alt="Alt text">
