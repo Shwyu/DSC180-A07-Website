@@ -30,7 +30,7 @@ We want to build a model that makes use of the advantages of GPFA and EM algorit
 ## Hierarchical Latent Variable Model
 ### Data
 <div style="text-align: center;">
-        <img src="./images/Mice Brain Regions.jpg" style="width: 300px; height: 255px;" alt="Alt text">
+        <img src="./images/Mice Brain Regions.jpg" alt="Alt text">
 </div>
 
 <style>
