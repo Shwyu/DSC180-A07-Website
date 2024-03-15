@@ -64,12 +64,12 @@ Here, we learn the first layer of latent variables for each brain region. This m
 
 #### Neural Trajectories of Superior Colliculus Deep Gray Layer:
 <p align="center">
-  <iframe src='./images/SCdg_train_trajectories_plot.html' width=938 height=565 frameBorder=0></iframe>
+  <iframe src='./images/SCdg_train_trajectories_plot.html' width=600 height=300 frameBorder=0></iframe>
 </p> 
 
 #### Neural Trajectories of Superior Colliculus Intermediate White Layer:
 <p align="center">
-  <iframe src='./images/SCiw_train_trajectories_plot.html' width=938 height=565 frameBorder=0></iframe>
+  <iframe src='./images/SCiw_train_trajectories_plot.html' width=600 height=300 frameBorder=0></iframe>
 </p>
 
 <body>
