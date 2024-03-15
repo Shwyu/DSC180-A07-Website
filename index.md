@@ -45,10 +45,9 @@ The International Brain Laboratory used neuropixel probes to record neural activ
 <br>
 
 <div style="text-align: center;">
-        <img src="./images/pipeline_eda.jpg" alt="Alt text">
+        <img src="./images/pipeline_eda.png" alt="Alt text">
 </div >
 
-*insert eda graphs*
 <style>
 * {
   box-sizing: border-box;
