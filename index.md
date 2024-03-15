@@ -63,9 +63,7 @@ The International Brain Laboratory used neuropixel probes to record neural activ
 </div>
 <br>
 
-<div style="text-align: center;">
-        <img src="./images/pipeline_eda.png" alt="Alt text">
-</div >
+<div style="text-align: center;"><img src="./images/pipeline_eda.png" alt="Alt text"></div >
 
 ### Variational Gaussian Process Factor Analysis (vLGP)
 Here, we learn the first layer of latent variables for each brain region. This model is a modifcation of Gaussian Process Factor Analysis (GPFA) using the Poisson Distribution as well as Variational Inference. 
