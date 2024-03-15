@@ -5,7 +5,7 @@ Sha lei: [s1lei@ucsd.edu](mailto:s1lei@ucsd.edu), Yutian Shi: [yus029@ucsd.edu](
 Mentor: Mikio Aoi [maoi@ucsd.edu](mailto:maoi@ucsd.edu)
         
 Full Report:
-<a href="https://github.com/courtneyacheung/Hierarchical-Latent-Variable-Models-for-Neural-Data-Analysis">Click Here </a>
+<a href="https://github.com/courtneyacheung/Hierarchical-Latent-Variable-Models-for-Neural-Data-Analysis/blob/main/papers/DSC_Capstone_Q2_Report.pdf">Click Here </a>
 <br>
 GitHub code: 
 <a href="https://github.com/courtneyacheung/Hierarchical-Latent-Variable-Models-for-Neural-Data-Analysis">Click Here </a>
