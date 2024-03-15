@@ -1,7 +1,7 @@
 
 
 # Hierarchical Latent Variable Models for Neural Data Analysis
-Sha lei: [s1lei@ucsd.edu](mailto:s1lei@ucsd.edu), Yutian Shi: [yus029@ucsd.edu](mailto:yus029@ucsd.edu), Courtney Cheung: [c6cheung@ucsd.edu](mailto:c6cheung@ucsd.edu), Shuyu Wang: [shw043@ucsd.edu](mailto:shw043@ucsd.edu)<br>
+Sha lei: [s1lei@ucsd.edu](mailto:s1lei@ucsd.edu), <br>Yutian Shi: [yus029@ucsd.edu](mailto:yus029@ucsd.edu), <br>Courtney Cheung: [c6cheung@ucsd.edu](mailto:c6cheung@ucsd.edu), <br>Shuyu Wang: [shw043@ucsd.edu](mailto:shw043@ucsd.edu)<br>
 Mentor: Mikio Aoi [maoi@ucsd.edu](mailto:maoi@ucsd.edu)
         
 Full Report:
@@ -64,7 +64,7 @@ Here, we learn the first layer of latent variables for each brain region. This m
 
 #### Neural Trajectories of Superior Colliculus Deep Gray Layer:
 <p align="center">
-  <iframe src='./images/SCdg_train_trajectories_plot.html' width=600 height=300 frameBorder=0></iframe>
+  <iframe src='./images/SCdg_train_trajectories_plot.html' width=1000 height=1000 frameBorder=0></iframe>
 </p> 
 
 #### Neural Trajectories of Superior Colliculus Intermediate White Layer:
