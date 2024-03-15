@@ -36,11 +36,12 @@ We want to build a model that makes use of the advantages of GPFA and EM algorit
 <style>
 body {
   font-size: 20px;
+  text-align: center;
 }
 </style>
 <body>
 
-<span style='font-size:100px; text-align: center;' >&#8595;</span>
+<span style='font-size:100px' >&#8595;</span>
 
 </body>
 
