@@ -28,6 +28,7 @@ We want to build a model that makes use of the advantages of GPFA and EM algorit
 <br>
 
 ## Models
+blah blah
 
 ### Gaussian Process Factor Analysis
    
