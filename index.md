@@ -37,10 +37,10 @@ The International Brain Laboratory used neuropixel probes to record neural activ
 
 <div class="row">
   <div class="column">
-    <img src="./images/experiment.jpg" alt="mice" style="width:100%">
+    <img src="./images/experiment.jpg" alt="mice" style="width:50%">
   </div>
   <div class="column">
-    <img src="./images/experiment_time.png" alt="time" style="width:100%">
+    <img src="./images/experiment_time.png" alt="time" style="width:50%">
 </div>
 <br>
 
@@ -89,23 +89,5 @@ Increase in the number of latent variables in pCCA model leads to smaller RMSE b
 
 For future research, we would like to explore the correlation between regions in more depth by reconstructing the data based on the learned latent variables produced by pCCA. Further research could also include investigating whether there is causation between neural activity in the Superior Colliculus Deep Gray Layer and Intermediate White Layer.
 
-<style>
-* {
-  box-sizing: border-box;
-}
-
-.column {
-  float: left;
-  width: 50%;
-  padding: 5px;
-}
-
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-</style>
 
 
