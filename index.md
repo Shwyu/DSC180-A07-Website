@@ -56,7 +56,7 @@ The International Brain Laboratory used neuropixel probes to record neural activ
 
 .column {
   float: left;
-  width: 33.33%;
+  width: 50%;
   padding: 5px;
 }
 
@@ -67,29 +67,6 @@ The International Brain Laboratory used neuropixel probes to record neural activ
   display: table;
 }
 </style>
-</head>
-<body>
-
-<h2>Images Side by Side</h2>
-<p>How to create side-by-side images with the CSS float property:</p>
-
-<div class="row">
-  <div class="column">
-    <img src="./images/experiment.jpg" alt="Snow" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="./images/experiment.jpg" alt="Forest" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="./images/experiment.jpg" alt="Mountains" style="width:100%">
-  </div>
-</div>
-
-<body>
-
-<span style='font-size:100px;text-align: center' >&#8595;</span>
-
-</body>
 
 ### Variational Gaussian Process Factor Analysis (vLGP)
 Here, we learn the first layer of latent variables for each brain region. This model is a modifcation of Gaussian Process Factor Analysis (GPFA) using the Poisson Distribution as well as Variational Inference. 
