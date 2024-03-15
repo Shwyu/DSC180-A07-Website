@@ -35,24 +35,6 @@ The International Brain Laboratory used neuropixel probes to record neural activ
 * Major behavioral events of interest for analysis include the stimulus onset time, the animal’s choice, the feedback delivery time, the feedback type (reward vs noise), the probability of the stimulus being on the left (block type), and the wheel motion onset time.
 * In this task, the time between stimulus onset and wheel motion onset, referred to as the reaction time of the animals, is short, with a median of 150ms.
 
-<style>
-* {
-  box-sizing: border-box;
-}
-
-.column {
-  float: left;
-  width: 50%;
-  padding: 5px;
-}
-
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-</style>
 
 <div class="row">
   <div class="column">
@@ -77,6 +59,7 @@ Here, we learn the first layer of latent variables for each brain region. This m
 <a href="https://gregorygundersen.com/blog/2021/04/16/variational-inference/">Learn about Variational Inference </a>
 </div>
 <br>
+
 
 #### Neural Trajectories of Superior Colliculus Deep Gray Layer:
 <p align="center">
@@ -109,5 +92,22 @@ Increase in the number of latent variables in pCCA model leads to smaller RMSE b
 
 For future research, we would like to explore the correlation between regions in more depth by reconstructing the data based on the learned latent variables produced by pCCA. Further research could also include investigating whether there is causation between neural activity in the Superior Colliculus Deep Gray Layer and Intermediate White Layer.
 
+<style>
+* {
+  box-sizing: border-box;
+}
 
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
 
