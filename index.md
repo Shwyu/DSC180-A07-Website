@@ -3,11 +3,11 @@
 
 # Hierarchical Latent Variable Models for Neural Data Analysis
 <br>
-<p align="center">Sha lei: [s1lei@ucsd.edu](mailto:s1lei@ucsd.edu)</p>
-<p align="center">Yutian Shi: [yus029@ucsd.edu](mailto:yus029@ucsd.edu)</p>
-<p align="center">Courtney Cheung: [c6cheung@ucsd.edu](mailto:c6cheung@ucsd.edu)</p>
-<p align="center">Shuyu Wang: [shw043@ucsd.edu](mailto:shw043@ucsd.edu)</p>
-<p align="center">Mentor: Mikio Aoi [maoi@ucsd.edu](mailto:maoi@ucsd.edu)</p>
+<p align="center">Sha lei: s1lei@ucsd.edu</p>
+<p align="center">Yutian Shi: yus029@ucsd.edu</p>
+<p align="center">Courtney Cheung: c6cheung@ucsd.edu</p>
+<p align="center">Shuyu Wang: shw043@ucsd.edu</p>
+<p align="center">Mentor: Mikio Aoi maoi@ucsd.edu</p>
         
 Full Report:
 <a href="https://github.com/courtneyacheung/Hierarchical-Latent-Variable-Models-for-Neural-Data-Analysis/blob/main/papers/DSC_Capstone_Q2_Report.pdf">Click Here </a>
@@ -131,11 +131,12 @@ Minimizing the KL divergence is the same as maximizing the evidence lower bound 
 After fitting our data to the vLGP model, we would explore multi-region analysis to examine variability shared between regions. This will give us insight into how activity in brain regions may be correlated versus distinct during a given task. For this analysis, we use Probabilistic Canonical Correlation (pCCA).<br>
 <div style="text-align: center;">
 <figure>
-        <img src="./images/pcca_math.png" alt="Alt text"></div >
+        <img src="./images/pcca_math.png" alt="Alt text">
         <figcaption>Fig.8 - pCCA Workflow Demonstration</figcaption>
 </figure>
 <br>
 <a href="https://gregorygundersen.com/blog/2018/09/10/pcca/">Learn about pCCA </a>
+</div>
 <br>
 
 ## Conclusion
@@ -144,8 +145,9 @@ From the two regions’ neural trajectories generated from the vLGP, there are c
 Increase in the number of latent variables in pCCA model leads to smaller RMSE be- tween the actual latent variable and estimated latent variable from the two regions, which conforms to the rules that with more latent variables, the model captures the complexity of the latent variable better.
 <br>
 <figure>
-<div style="text-align: center;"><img src="./images/pCCA_RMSE_plot.png" alt="Alt text"></div >
+<div style="text-align: center;"><img src="./images/pCCA_RMSE_plot.png" alt="Alt text">
 <figcaption>Fig.9 - PCCA RMSE</figcaption>
+</div >
 </figure>
 <br>
 For future research, we would like to explore the correlation between regions in more depth by reconstructing the data based on the learned latent variables produced by pCCA. Further research could also include investigating whether there is causation between neural activity in the Superior Colliculus Deep Gray Layer and Intermediate White Layer, which helps us to understand the co-function of these two regions and decode neural acitivities by inference models.
