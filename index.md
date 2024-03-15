@@ -27,9 +27,12 @@ We want to build a model that makes use of the advantages of GPFA and EM algorit
 
 The International Brain Laboratory used neuropixel probes to record neural activity from various mice brain areas during a decision-making task.
 
+<figure>
 <div style="text-align: center;">
         <img src="./images/IBL dataset.jpg" style="width: 300px; height: 255px;" alt="Alt text">
+        <figcaption>Fig.1 - Mice Brain Data From IBL</figcaption>
 </div>
+</figure>
 <br>
 
 **Decision Making Task:**
@@ -40,15 +43,18 @@ The International Brain Laboratory used neuropixel probes to record neural activ
 * Major behavioral events of interest for analysis include the stimulus onset time, the animal’s choice, the feedback delivery time, the feedback type (reward vs noise), the probability of the stimulus being on the left (block type), and the wheel motion onset time.
 * In this task, the time between stimulus onset and wheel motion onset, referred to as the reaction time of the animals, is short, with a median of 150ms.
 
-
+<figure style="text-align: center;">
 <div class="row">
   <div class="column">
     <img src="./images/experiment.jpg" alt="mice" style="width:100%">
+    <figcaption>Fig.2 - Visual Stimulus Task on Mice </figcaption>
   </div>
   <div class="column">
     <img src="./images/experiment_time.png" alt="time" style="width:100%">
+    <figcaption>Fig.3 - Experiment Process </figcaption>
   </div>
-</div>        
+</div>
+</figure>        
 <br>
 
 **Region Selection:**
@@ -56,12 +62,19 @@ The International Brain Laboratory used neuropixel probes to record neural activ
 <br>
 We pick the Midbrain region, Superior Colliculus, as the candidate regions, as it has the motor functions for controlling the eyes and brain’s orientation to the stimulus. We selected Superior Colliculus Deep Gray Layer (SCdg) and Superior Colliculus Intermediate White Layer (SCiw) as the two candidate regions, and we will explore whether they are activated simultaneously and the patterns of the neuron activities in these two regions under different task conditions by drawing Peristimulus time histogram (PSTH) and raster plot.
 <br>
-<div style="text-align: center;"><img src="./images/pipeline_eda.png" alt="Alt text"></div >
+<figure>
+<div style="text-align: center;">
+        <img src="./images/pipeline_eda.png" alt="Alt text">
+        <figcaption>Fig.4 - Brain Region Selection and Exploratory Data Analysis For Each Region </figcaption>
+</div >
+</figure>
 <br>
 
 * Raster: a visual representation that shows the timing and occurrence of neural spikes over time. Each vertical line represents a spike and the horizontal line represents time. The Raster plot displays the firing patterns of neurons and is useful for analyzing the neural activities in the brain.
 * Peri-Stimulus Time Histogram (PSTH): illustrates the neural firing rate in response to a stimulus over time. It provides the temporal pattern and strength of neural response which helps to analyze how neurons react to specific stimuli.
 * Firing rate: the number of times that a neuron releases electrical energy in a given time period.
+
+The EDA graph above indicates that for both SCdg and SCiw there is a significant change of the neuron firing rate happens after the mice begin to turn the wheel, and for the SCdg region, the neuron has different responses for decision variable that depends on left or right direction of turning the wheel. 
 
 
 ### Variational Gaussian Process Factor Analysis (vLGP)
@@ -80,7 +93,7 @@ Minimizing the KL divergence is the same as maximizing the evidence lower bound 
 <Figure>
 <div style="text-align: center;">
         <img src="./images/vlgp_demo.png" style="width: 850px; height: 255px;" alt="Alt text">
-        <figcaption>Fig.1 - <a href="https://arxiv.org/pdf/1604.03053.pdf">vLGP </a> workflow</figcaption>
+        <figcaption>Fig.5 - <a href="https://arxiv.org/pdf/1604.03053.pdf">vLGP </a> workflow</figcaption>
 </div>
 </Figure>
 
@@ -92,12 +105,18 @@ Minimizing the KL divergence is the same as maximizing the evidence lower bound 
 
 #### Neural Trajectories of Superior Colliculus Deep Gray Layer:
 <p align="center">
-  <iframe src='./images/SCdg_train_trajectories_plot.html' width=1100 height=1000 frameBorder=0></iframe>
+<Figure>
+        <iframe src='./images/SCdg_train_trajectories_plot.html' width=1100 height=1000 frameBorder=0></iframe>
+        <figcaption>Fig.6 - Neural Trajectories For SCdg</figcaption>
+</Figure>
 </p> 
 
 #### Neural Trajectories of Superior Colliculus Intermediate White Layer:
 <p align="center">
-  <iframe src='./images/SCiw_train_trajectories_plot.html' width=1100 height=1000 frameBorder=0></iframe>
+<Figure>
+        <iframe src='./images/SCiw_train_trajectories_plot.html' width=1100 height=1000 frameBorder=0></iframe>
+        <figcaption>Fig.7 - Neural Trajectories For SCiw</figcaption>
+</Figure>
 </p>
 
 <body>
@@ -110,7 +129,11 @@ Minimizing the KL divergence is the same as maximizing the evidence lower bound 
 
 ### Probabilistic Canonical Correlation Analysis
 After fitting our data to the vLGP model, we would explore multi-region analysis to examine variability shared between regions. This will give us insight into how activity in brain regions may be correlated versus distinct during a given task. For this analysis, we use Probabilistic Canonical Correlation (pCCA).<br>
-<div style="text-align: center;"><img src="./images/pcca_math.png" alt="Alt text"></div >
+<div style="text-align: center;">
+<figure>
+        <img src="./images/pcca_math.png" alt="Alt text"></div >
+        <figcaption>Fig.8 - pCCA Workflow Demonstration</figcaption>
+</figure>
 <br>
 <a href="https://gregorygundersen.com/blog/2018/09/10/pcca/">Learn about pCCA </a>
 <br>
@@ -122,7 +145,7 @@ Increase in the number of latent variables in pCCA model leads to smaller RMSE b
 <br>
 <figure>
 <div style="text-align: center;"><img src="./images/pCCA_RMSE_plot.png" alt="Alt text"></div >
-<figcaption>Fig.1 - PCCA RMSE</figcaption>
+<figcaption>Fig.9 - PCCA RMSE</figcaption>
 </figure>
 <br>
 
@@ -144,6 +167,13 @@ For future research, we would like to explore the correlation between regions in
   content: "";
   clear: both;
   display: table;
+}
+figcaption {
+  background-color: black;
+  color: white;
+  font-style: italic;
+  padding: 2px;
+  text-align: center;
 }
 </style>
 
