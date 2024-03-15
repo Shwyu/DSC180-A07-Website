@@ -40,7 +40,7 @@ div class="row">
     <img src="./images/experiment.jpg" alt="mice" style="width:100%">
   </div>
   <div class="column">
-    <img src="./images/experiment_time.jpg" alt="time" style="width:100%">
+    <img src="./images/experiment_time.png" alt="time" style="width:100%">
 </div>
 
 <div style="text-align: center;">
