@@ -36,7 +36,7 @@ The International Brain Laboratory used neuropixel probes to record neural activ
 * In this task, the time between stimulus onset and wheel motion onset, referred to as the reaction time of the animals, is short, with a median of 150ms.
 
 <div style="text-align: center;">
-        <img src="./images/experiment.jpg" style="width: 300px; height: 255px;" alt="Alt text">
+        <img src="./images/experiment.jpg" style="width: 320px; height: 255px;" alt="Alt text">
 </div>
 <br>
 
