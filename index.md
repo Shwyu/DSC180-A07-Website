@@ -31,7 +31,7 @@ We want to build a model that makes use of the advantages of GPFA and EM algorit
 ### Data
 <div style="text-align: center;">
         <img src="./images/Mice Brain Regions.jpg" alt="Alt text">
-</div>
+</div >
 
 <style>
 body {
@@ -40,7 +40,7 @@ body {
 </style>
 <body>
 
-<span style='font-size:100px;'>&#8595;</span>
+<span style='font-size:100px;" "text-align: center;"'>&#8595;</span>
 
 </body>
 
