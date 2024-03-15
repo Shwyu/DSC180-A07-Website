@@ -4,6 +4,9 @@
 Sha lei: [s1lei@ucsd.edu](mailto:s1lei@ucsd.edu), Yutian Shi: [yus029@ucsd.edu](mailto:yus029@ucsd.edu), Courtney Cheung: [c6cheung@ucsd.edu](mailto:c6cheung@ucsd.edu), Shuyu Wang: [shw043@ucsd.edu](mailto:shw043@ucsd.edu)<br>
 Mentor: Mikio Aoi [maoi@ucsd.edu](mailto:maoi@ucsd.edu)
         
+Full Report:
+<a href="https://github.com/courtneyacheung/Hierarchical-Latent-Variable-Models-for-Neural-Data-Analysis">Click Here </a>
+<br>
 GitHub code: 
 <a href="https://github.com/courtneyacheung/Hierarchical-Latent-Variable-Models-for-Neural-Data-Analysis">Click Here </a>
 <br>
@@ -17,7 +20,7 @@ We want to build a model that makes use of the advantages of GPFA and EM algorit
 
 ### Data
 
-IBL used neuropixel probes to record neural activity from various mice brain areas during a decision-making task.
+The International Brain Laboratory used neuropixel probes to record neural activity from various mice brain areas during a decision-making task.
 
 <div style="text-align: center;">
         <img src="./images/IBL dataset.jpg" style="width: 300px; height: 255px;" alt="Alt text">
@@ -31,7 +34,7 @@ Mice use a wheel to move a visual stimulus to the center of the screen, with var
 <br>
 
 <div style="text-align: center;">
-        <img src="./images/mice_brain_selection.jpg" alt="Alt text">
+        <img src="./images/pipeline_eda.jpg" alt="Alt text">
 </div >
 
 *insert eda graphs*
