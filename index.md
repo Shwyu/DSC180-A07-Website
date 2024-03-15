@@ -148,8 +148,9 @@ Increase in the number of latent variables in pCCA model leads to smaller RMSE b
 <figcaption>Fig.9 - PCCA RMSE</figcaption>
 </figure>
 <br>
+For future research, we would like to explore the correlation between regions in more depth by reconstructing the data based on the learned latent variables produced by pCCA. Further research could also include investigating whether there is causation between neural activity in the Superior Colliculus Deep Gray Layer and Intermediate White Layer, which helps us to understand the co-function of these two regions and decode neural acitivities by inference models.
 
-For future research, we would like to explore the correlation between regions in more depth by reconstructing the data based on the learned latent variables produced by pCCA. Further research could also include investigating whether there is causation between neural activity in the Superior Colliculus Deep Gray Layer and Intermediate White Layer.
+Also, the result is based on the experiments on homologue mice's brain, since human brain might functions and responds differently, we could not make conclusions on human brain.
 
 <style>
 * {
