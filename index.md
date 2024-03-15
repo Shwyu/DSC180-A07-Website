@@ -55,7 +55,15 @@ Here, we learn the first layer of latent variables for each brain region. This m
 <a href="https://gregorygundersen.com/blog/2021/04/16/variational-inference/">Learn about Variational Inference </a>
 <br>
 
+Superior Colliculus Deep Gray Layer
+<p align="center">
+  <iframe src='./images/SCdg_train_trajectories_plot.html' width=938 height=565 frameBorder=0></iframe>
+</p> 
 
+Superior Colliculus Intermediate White Layer
+<p align="center">
+  <iframe src='./images/SCiw_train_trajectories_plot.html' width=938 height=565 frameBorder=0></iframe>
+</p>
 
 <body>
 
