@@ -27,7 +27,12 @@ We want to build a model that makes use of the advantages of GPFA and EM algorit
 
 <br>
 
-## Models
+## Hierarchical Latent Variable Model
+### Data
+<div style="text-align: center;">
+        <img src="./images/Mice Brain Regions.jpg" style="width: 300px; height: 255px;" alt="Alt text">
+</div>
+
 <style>
 body {
   font-size: 20px;
@@ -38,6 +43,8 @@ body {
 <span style='font-size:100px;'>&#8595;</span>
 
 </body>
+
+
 
 ### Gaussian Process Factor Analysis
    
