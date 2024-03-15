@@ -36,7 +36,6 @@ We want to build a model that makes use of the advantages of GPFA and EM algorit
 <style>
 body {
   font-size: 20px;
-  text-align: center;
 }
 </style>
 <body>
