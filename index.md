@@ -61,7 +61,6 @@ Here, we learn the first layer of latent variables for each brain region. This m
 <br>
 <a href="https://gregorygundersen.com/blog/2021/04/16/variational-inference/">Learn about Variational Inference </a>
 <br>
-<br>
 
 #### Neural Trajectories of Superior Colliculus Deep Gray Layer:
 <p align="center">
